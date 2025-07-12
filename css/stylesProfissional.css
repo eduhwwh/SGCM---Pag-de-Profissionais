@@ -243,7 +243,7 @@ form.profissional input[type="reset"]:hover {
     opacity: 0.9;
 }
 
-#formEditar{
+/* #formEditar{
     background-color: #f2f2f2;
     padding: 25px;
     border-radius: 10px;
@@ -288,7 +288,7 @@ form.profissional input[type="reset"]:hover {
 #formEditar input[type="submit"]:hover,
 #formEditar input[type="reset"]:hover {
     opacity: 0.9;
-}
+} */
 
 
 
