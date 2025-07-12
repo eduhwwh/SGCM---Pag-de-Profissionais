@@ -40,8 +40,9 @@
         </ul>
     </nav>
     <main>
-        
+
         <button id="botaoAdd">Adicionar</button>
+
 
         <form id="formProf" class="profissional esconder" action="">
             <h1>Cadastro de Profissionais</h1>
@@ -75,9 +76,12 @@
 
             <input type="submit" value="Enviar" onclick="ProfissionalCadastrado()">
             <input type="reset" value="Limpar">
+            <input type="button" value="Cancelar" id="cancele">
+
         </form>
+
         <table id="Prof">
-              <h2>Lista de Profissionais</h2>
+            <h2>Lista de Profissionais</h2>
             <!-- tr*6>td{X}*8 
              Gera 6 linhas com 8 colunas preenchidas com X -->
             <!-- tr*5>td{$}+td*6{X}+td{Editar|Excluir} -->
@@ -93,63 +97,52 @@
                     <th>OPÇÕES</th>
                 </tr>
             </thead>
+            <tbody>
+
+            </tbody>
             <!-- tr*5>td{$}+td*6{X}+td{<a href="">Editar</a>|<a href="">Excluir</a>} -->
-            <!-- <tr>
-                <td>1</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td><a class="botao_verde" href="">Editar</a>|<a class="botao_vermelho" href="">Excluir</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td><a href="">Editar</a>|<a href="">Excluir</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td><a href="">Editar</a>|<a href="">Excluir</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td><a href="">Editar</a>|<a href="">Excluir</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td><a href="">Editar</a>|<a href="">Excluir</a></td>
-            </tr> -->
             <tfoot>
                 <tr>
                     <td colspan="8" id="quantProfissionais">Quantidade de Profissionais: 5</td>
                 </tr>
             </tfoot>
         </table>
+        <form id="formEditar" class="">
+            <h2>Editar Profissional</h2>
+            <input type="hidden" id="edit-id">
+
+            <label>Nome:
+                <input type="text" id="edit-nome" required>
+            </label>
+            <label>Registro Conselho:
+                <input type="text" id="edit-registro" required>
+            </label>
+            <label>Telefone:
+                <input type="text" id="edit-telefone" required>
+            </label>
+            <label>Email:
+                <input type="email" id="edit-email" required>
+            </label>
+            <label for="unidade">Unidade:</label>
+            <select id="unidade" name="unidade">
+                <option value="" selected></option>
+                <option value="1">UPA - Segundo Distrito</option>
+                <option value="2">UPA - Cidade do Povo</option>
+                <option value="3">Pronto Socorro</option>
+            </select>
+
+            <label for="especialidade">Especialidade</label>
+            <select id="especialidade" name="especialidade">
+                <option value=""></option>
+                <option value="1">Cardiologista</option>
+                <option value="2">Urologista</option>
+                <option value="3">Ginecologista</option>
+            </select>
+
+
+            <button type="submit">Salvar</button>
+            <button type="button" id="edit-cancelar  formEditar">Cancelar</button>
+        </form>
     </main>
     <footer>
         <p>Telefone: (68)3223-3030 | Email: suporte@sgcm.ufac.br</p>

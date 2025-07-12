@@ -161,6 +161,19 @@ input[type="reset"],
 
 }
 
+input[type="button"],
+#cancele{
+    background-color: rgb(247, 33, 5);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7em;
+    margin: 0.8em;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
 /* Centraliza o formulário na tela */
 main {
     display: flex;
@@ -230,6 +243,52 @@ form.profissional input[type="reset"]:hover {
     opacity: 0.9;
 }
 
+#formEditar{
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px 0;
+}
+
+#formEditar label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#formEditar input[type="text"],
+#formEditar input[type="email"],
+#formEditar select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formEditar input[type="submit"],
+#formEditar input[type="reset"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005ba3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formEditar input[type="reset"] {
+    background-color: #999;
+    margin-left: 10px;
+}
+
+#formEditar input[type="submit"]:hover,
+#formEditar input[type="reset"]:hover {
+    opacity: 0.9;
+}
 
 
 
@@ -245,6 +304,7 @@ footer {
     padding: 30px 0;
 
 }
+
 
 /* resposivo */
 
